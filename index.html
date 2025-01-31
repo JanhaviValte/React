@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="myDiv">
+            HELLO REACT
+        </div>
+
+        <script type="text/babel">
+
+            function Test()
+            
+            {
+                const jan=()=>alert("test")
+                return <button onClick={jan}>Click me</button>
+            }
+            class Hello extends React.Component{
+                render()
+                {
+                    return <div>Hello React With Code <Test/></div>
+                }
+            }
+            ReactDOM.render(<Hello/>,document.getElementById('myDiv'))
+        </script>
+    </body>
+</html>
